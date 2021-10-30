@@ -1,4 +1,8 @@
 
+- [ ] Post your first picture.
+- [ ] Post your first code.
+- [ ] Post a journal entry.
+
 ### A
 
 A.
