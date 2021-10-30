@@ -1,11 +1,15 @@
 
-- [ ] Post your first picture.
-- [ ] Post your first code.
-- [ ] Post a journal entry.
+- [ ]  Post your first picture.
+- [ ]  Post your first code.
+- [ ]  Post a journal entry.
 
-### A
+### First Title
 
-A.
+```java
+  if(isProductive) {
+    System.out.println("Time to create!");
+  }
+```
 
 ```markdown
 Syntax highlighted code block
@@ -19,10 +23,10 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-### B
+### Second Title
 
 B.
 
-### C
+### Third Title
 
 C.
