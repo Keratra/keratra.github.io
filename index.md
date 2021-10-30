@@ -1,4 +1,3 @@
-# Kera's Adventures
 
 ### A
 
