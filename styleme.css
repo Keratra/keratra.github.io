@@ -1,12 +1,13 @@
 html {
 	margin: 0;
 	padding: 0;
-
 	background-color: #212021;
+	background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
 	color: #f2f2f2;
 
 	font-family: 'Lato', sans-serif;
 	line-height: 1.6;
+	
 }
 
 body {
@@ -19,13 +20,16 @@ body {
 }
 
 main {
-	margin: 0 8rem;
+	margin: 0 20rem;
 	
+}
+
+h1 {
+	text-shadow: 2px 2px #212021;
 }
 
 p::first-letter {
 	font-size: 1.5rem;
-	font-weight: bold;
 }
 
 a {
@@ -62,48 +66,48 @@ li:nth-child(odd) { color: ghostwhite; }
 	padding: 1rem 0;
 
 	background-color: #111011;
-	box-shadow: 0 0 0.5rem 0.2rem #111011;
+	box-shadow: 0 0 0.2rem 0.2rem #111011;
 
 	z-index: 9999;
 
 	text-align: center;
-}
-
-.decoration {
-	
-	background-image: url("https://www.vhv.rs/dpng/f/423-4232710_plants-golden-atmosphere-flower-gold-euclidean-vector-vector.png");
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-size: 206px 482px;
 }
 
 .pagetitle span {
 	color: #f2f2f2;
 	font-weight: bold;
 	font-size: 2rem;
+	user-select: none;
+}
+
+.intro-grid {
+	margin: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
 }
 
 .intro {
 	padding: 2rem 0;
-
-	z-index: 9999;
-
 	text-align: center;
 
-	font-size: 1.5rem;
+
+	font-size: 1rem;
 }
 
 .intro div img {
-	filter: drop-shadow(8px 8px 10px #131013);
+	user-select: none;
+	filter: drop-shadow(8px 8px 10px #171617);
 }
 
 .intro div img:hover {
-	animation: scale 0.5s ease-in-out infinite alternate;
+	animation: scale 0.9s ease-in-out infinite alternate;
 }
 
 @keyframes scale {
 	0% { transform: scale(1); }
-	100% { transform: scale(1.2); }
+	100% { transform: scale(1.05); }
 }
 
 .intro div h1 {
@@ -131,6 +135,14 @@ li:nth-child(odd) { color: ghostwhite; }
 
 	background-color: #171617;
 	box-shadow: 0 0 0.2rem 0.2rem #171617;
+
+	transition: all 0.2s ease-in-out;
+}
+
+.infoblock:hover {
+	transform: scale(1.05);
+	box-shadow: 0 0 0.5rem 0.5rem #171617;
+	border-color: #FFE7FF;
 }
 
 .infoblock h1 {
@@ -140,7 +152,7 @@ li:nth-child(odd) { color: ghostwhite; }
 .imagegrid {
 	margin-bottom: 2rem;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	gap: 2rem;
 }
@@ -149,6 +161,23 @@ li:nth-child(odd) { color: ghostwhite; }
 	border: 2px solid darkgray;
 	border-radius: 0.5rem;
 	box-shadow: 0 0 0.2rem 0.2rem #171617;
+	user-select: none;
+	cursor: none;
+
+	transition: all 0.2s ease-in-out;
+}
+
+.imagegrid div img:hover {
+	box-shadow: 0 0 0.5rem 0.5rem #171617;
+	border-color: #FFE7FF;
+}
+
+.imagegrid div {
+	transition: all 0.2s ease-in-out;
+}
+
+.imagegrid div:hover {
+	transform: scale(1.05);
 }
 
 .imgcontainer {
@@ -160,6 +189,8 @@ li:nth-child(odd) { color: ghostwhite; }
   position: absolute;
   top: 8px;
   left: 16px;
+	cursor: none;
+	user-select: none;
 
 	
 	font-weight: bold;
@@ -167,14 +198,21 @@ li:nth-child(odd) { color: ghostwhite; }
   text-shadow: 2px 2px #212021;
 }
 
+.img-credit {
+	font-weight: bold;
+	font-size: 0.8rem;
+	color: gray;
+	text-align: center
+}
+
 footer {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
-	gap: 1rem;
+	gap: 3rem;
 	padding: 0.6rem 0;
 
 	
 	background-color: #111011;
-	box-shadow: 0 0 0.5rem 0.2rem #111011;
+	box-shadow: 0 0 0.2rem 0.2rem #111011;
 }
