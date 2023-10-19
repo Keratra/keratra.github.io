@@ -11,10 +11,10 @@ html {
 
 body {
 	margin: 0;
-	background-image: url("https://www.vhv.rs/dpng/f/423-4232710_plants-golden-atmosphere-flower-gold-euclidean-vector-vector.png");
+	/* background-image: url("https://www.vhv.rs/dpng/f/423-4232710_plants-golden-atmosphere-flower-gold-euclidean-vector-vector.png");
   background-repeat: no-repeat;
   background-position: right;
-  background-size: 206px 482px;
+  background-size: 206px 482px; */
 
 }
 
@@ -45,6 +45,18 @@ a:hover {
 li { color: #E2D7F4; }
 li:nth-child(odd) { color: ghostwhite; }
 
+.reverse-list {
+	counter-reset: my-custom-counter 5;
+	list-style: none;
+}
+
+.reverse-list > li {
+	counter-increment: my-custom-counter -1;
+}
+
+.reverse-list > li::before {
+	content: counter(my-custom-counter) '. ';
+}
 
 .pagetitle {
 	padding: 1rem 0;
@@ -83,6 +95,15 @@ li:nth-child(odd) { color: ghostwhite; }
 
 .intro div img {
 	filter: drop-shadow(8px 8px 10px #131013);
+}
+
+.intro div img:hover {
+	animation: scale 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes scale {
+	0% { transform: scale(1); }
+	100% { transform: scale(1.2); }
 }
 
 .intro div h1 {
