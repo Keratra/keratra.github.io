@@ -231,14 +231,12 @@ footer {
 	box-shadow: 0 0 0.2rem 0.2rem #16010C;
 }
 
-/* outsourced animations from codepen */
-
 
 .waves {
   position:relative;
   width: 100%;
   height:15vh;
-  margin-bottom:-7px; /*Fix for safari gap*/
+  margin-bottom:-7px;
   min-height:100px;
   max-height:150px;
 }
@@ -270,16 +268,81 @@ footer {
     transform: translate3d(85px,0,0);
   }
 }
-/*Shrinking for mobile*/
+
 @media (max-width: 768px) {
   .waves {
     height:40px;
     min-height:40px;
   }
-  .content {
-    height:30vh;
+}
+
+@media screen and (max-width: 1600px) {
+	.page {
+		padding: 1rem 10rem;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    padding: 0;
   }
-  h1 {
-    font-size:24px;
+
+  .page {
+    padding: 1rem;
   }
+
+  .intro-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+	.intro-grid h1 {
+		text-align: center;
+	}
+
+  .intro {
+    padding: 1rem 0;
+  }
+
+  .intro div img {
+    width: 100%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .infoblock {
+    margin: 1rem;
+  }
+
+  .imagegrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+		justify-content: center;
+  }
+
+  .imagegrid div {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .imgcontainer {
+    text-align: center;
+  }
+
+  .top-left {
+    left: 0;
+  }
+
+	.imagegrid div img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	footer {
+		font-size: 0.6rem;
+	}
 }
